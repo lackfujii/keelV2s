@@ -1,0 +1,121 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+                                                                ------------------( KEEL.lua INFORMATION )------------------(
+
+
+                        Bybasses most aimviews , anti locks lol
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+getgenv().Keel = {
+  ["Silent"] = {
+      Enabled = true,
+      Mode = "FOV", -- // FOV or Target
+      Enable_KeyBind = true,
+      KeyBind = "p",
+      Notification = true,
+      Predict = true,
+      Prediction = 0.135,
+      HitParts = 'HumanoidRootPart'
+  },
+  ["AimAssist"] = {
+      Enabled = true,
+      Hold_KeyBind = false,
+      Mode = "KeyBind", -- // "KeyBind"
+      KeyBind = 'q'
+      Predict = true,
+      Prediction = 0.115,
+      Smooth = true,
+      SmoothValue = 0.014
+      },
+  },
+  ["Shake"] = {
+      Enabled = true,
+  },
+  ["Fov"] = {
+      ["Silent"] = {
+          Visible = true, -- circle visible
+          Filled = true,
+          Size = 35,
+          Transparency = 0.14,
+          Thickness = 1,
+          Shape = 'Circle',
+          Set = {0, 0},
+          Color = Color3.fromRGB(0, 0, 0),
+      },
+      ["AimAssist"] = {
+          Visible = true, -- circle visible
+          Use_Fov = false,
+          Disable_Outside_Fov = false,
+          Filled = false,
+          Size = 50,
+          Transparency = 1,
+          Thickness = 1,
+          Shape = 'Circle',
+          Set = {0, 0},
+          Color = Color3.fromRGB(0, 0, 0),
+      },
+  },
+  ["Checks"] = {
+      Wall = true,
+      Knocked = true,
+      Grabbed = true,
+      Airshot = true,
+      Crew_Check = false,
+      NoGroundShots = true,
+  },
+  ["Resolver"] = {
+      Enabled = true,
+      Anti_Aim_Viewer = true,
+  },
+  ["Misc"] = {
+      ["Auto360"] = {
+          Enabled = false,
+          SpinKeybind = "Q",
+          SpinSpeed = 1,
+    },
+      ["FakeSpike"] = {
+          Enabled = false,
+          FakeSpikeKeybind = "K",
+          SpikeDuration = 1,
+    },
+      ["AutoReset"] = {
+          Enabled = false,
+          AutoResetKeybind = "L",
+          UseDelay = true,
+          Delay = 1,
+    },
+      ["Settings"] = {
+          AutoLowGFX = false,
+          MuteBoomBox = false,
+          AutoReload = false,
+      },
+  },
+
+ 
+  ["AutoPrediction"] = { -- the numbers are pings ( this is for silent + Current sets not recommended )
+      Enabled = false,
+      p20_30 = 0.1000,
+      p30_40 = 0.1100,
+      p40_50 = 0.1190,
+      p50_60 = 0.1230,
+      p60_70 = 0.1250,
+      p70_80 = 0.1290,
+      p80_90  = 0.1295,
+      p90_100 = 0.1300,
+      p100_110 = 0.1315,
+      p110_120 = 0.1344,
+      p120_130 = 0.1411,
+      p130_140 = 0.1500,
+      p140_150 = 0.1555,
+      p150_160 = 0.1574,
+      p160_170 = 0.1663,
+      p170_180 = 0.1672,
+      p180_190 = 0.1848,
+      p190_200 = 0.1865,
+  },
+ 
